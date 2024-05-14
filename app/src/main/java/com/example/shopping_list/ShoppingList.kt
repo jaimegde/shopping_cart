@@ -161,7 +161,8 @@ fun ShoppingListItem(item: ShoppingItem, onEditClick: () -> Unit, onDeleteClick:
         modifier = Modifier
             .padding(8.dp)
             .fillMaxWidth()
-            .border(border = BorderStroke(2.dp, Color.Magenta), shape = RoundedCornerShape(20))
+            .border(border = BorderStroke(2.dp, Color.Magenta), shape = RoundedCornerShape(20)),
+        horizontalArrangement = Arrangement.SpaceBetween
     ){
         Text(text = item.name, modifier = Modifier.padding(8.dp))
         Text(text = "${item.quantity}", modifier = Modifier.padding(8.dp))
